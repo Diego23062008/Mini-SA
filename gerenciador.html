@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/gerenciador.css">
+    <title>Gerenciador De Tarefas</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imagens/Gemini_Generated_Image_36o1b536o1b536o1-removebg-preview.png" alt="logo">
+        </div>
+        <menu>
+            <a href="perfil.html">Inicio</a>
+            <a href="dashboard.html">Perfil</a>
+            <a href="#">Tema</a>
+        </menu>
+    </header>
+    <main>
+        <section class="pendencias">
+            <div class="campo-progresso" id="total-tarefas">
+                <p>Total</p>
+                <p>1</p>
+            </div>
+            <div class="campo-progresso" id="pendentes">
+                <p>Pendentes</p>
+                <p>1</p>
+            </div>
+            <div class="campo-progresso" id="tarefas-concluidas">
+                <p>Concluídas</p>
+                <p>0</p>
+            </div>
+        </section>
+        <section class="nova-tarefa">
+            <div class="info-tarefa">
+                <input type="text" name="titulo-tarefa" id="ititulo-tarefa" placeholder="Adicione uma tarefa...">
+                <textarea name="descricao" id="idescricao" cols="30" rows="8" placeholder="Descrição (opcional)"></textarea>
+            </div>
+            <div class="dados-tarefa">
+                <div id="opcao1" class="opcao">
+                    Trabalho
+                </div>
+                <div id="opcao2" class="opcao">
+                    Alta
+                </div>
+                <div id="opcao3" class="opcao">
+                    dd/mm/aa
+                </div>
+            </div>
+            <div class="btn-adicionar-tarefa">
+                <button>+ Adicionar tarefa</button>
+            </div>
+        </section>
+        <section class="filtro">
+            <div class="buttons-filtro"></div>
+            <div class="texto-filtro"></div>
+        </section>
+        <section class="lista-tarefas">
+            <div class="item-lista">
+                <div class="titulo-tarefa">
+                    <h1>Nome da Tarefa</h1>
+                </div>
+                <div class="info-lista-tarefa">
+                    <p>data:</p>
+                    <p>Prioridade:</p>
+                    <button class="btn-excluir">Excluir</button>
+                    <button class="btn-editar">Editar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Este Site foi desenvolvido por Diego, Elvis, Kaloa, Amanda, Mariangel e Matheus.</p>
+    </footer>
+</body>
+</html>

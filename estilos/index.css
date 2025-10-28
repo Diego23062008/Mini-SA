@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor01: #ffffff;
+    --cor02: #000000;
+    --cor03: #003366;
+    --cor04: #80d9ff;
+    --cor05: #bfecff;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed",sans-serif;
+}
+
+.cabecalho{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.espaco-login{
+    background-color: var(--cor03);
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.img-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.espaco-box{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    background-color: whitesmoke;
+    outline: 3px solid white;
+    border: 4px solid var(--cor03);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.521);
+    width: 250px;
+    padding: 20px;
+}
+
+.login-box h2{
+    color: var(--cor04);
+    text-align: center;
+    margin: 10px 0px 30px 0px;
+    font-size: 1.7em;
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box .campo input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 05px;
+    border: 2px solid gray;
+}
+
+.login-box .btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box .btn-login button{
+    background-color: var(--cor04);
+    border: 2px solid gray;
+    color: white;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.login-box .btn-login button a{
+    color: white;
+    text-decoration: none;
+}
+
+.login-box .btn-login button:hover{
+    background-color: #0167cd;
+    cursor: pointer;
+}
+
+.login-box .criar-conta{
+    text-align: center;
+    width: 100%;
+}
+
+.login-box .criar-conta a{
+    text-decoration: none;
+    color: var(--cor04);
+    margin: 5px 0px 10px 0px;
+}
+
+.login-box .criar-conta a:hover{
+    text-decoration: underline;
+    color: #0175e8;
+
+}
+
+.info-site{
+    background-color: var(--cor03);
+    color: var(--cor01);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+    padding: 20px;
+}
+
+.info-site .info-img{
+    height: 100%;
+}
+
+.info-site .info-img img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 05px;
+}
+
+.info-site .info-texto{
+    padding: 20px;
+    width: 60%;
+}
+
+.info-texto h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-texto p{
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+.info-texto h4{
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor03);
+    color: var(--cor01);
+    text-align: center;
+    padding: 36px;
+}

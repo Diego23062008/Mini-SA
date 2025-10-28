@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor01: #ffffff;
+    --cor02: #000000;
+    --cor03: #003366;
+    --cor04: #80d9ff;
+    --cor05: #bfecff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed",sans-serif;
+}
+
+/************topo***************/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--cor01);
+}
+header .logo{
+    height: 45px;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+header menu{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+header menu a{
+    text-decoration: none;
+    color: var(--cor03);
+    border-left:  1px solid black;
+    padding: 5px;
+    padding-left:  15px;
+}
+
+/**************conteudo***********/
+main{
+    background-color: var(--cor03);
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto-perfil{
+    border: 3px solid green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados{
+    background-color: rgba(245, 245, 245, 0.329);
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 40%;
+}
+.dados h2{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100%;
+    padding: 5px;
+}
+.dados-perfil{
+    margin: 20px 0px 50px 0px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer{
+    height: 40px;
+    padding: 15px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--cor02);
+}

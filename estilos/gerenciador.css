@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor01: #ffffff;
+    --cor02: #000000;
+    --cor03: #003366;
+    --cor04: #80d9ff;
+    --cor05: #bfecff;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed",sans-serif;
+}
+
+body{
+    background-color: var(--cor05);
+}
+
+header{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+header .logo{
+    height: 45px;
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header menu{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+header menu a{
+    text-decoration: none;
+    color: var(--cor03);
+    border-left: 1px solid black;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+main{
+    height: calc(100vh - 100px);
+    background-color: ;
+    margin-top: 10px;
+}
+
+.pendencias{
+    display: flex;
+    justify-content: space-around;
+}
+
+.campo-progresso{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: var(--cor04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 15px;
+    margin: 20px 0px;
+}
+
+.nova-tarefa{
+    background-color: var(--cor03);
+    margin: 0px 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 20px 30px;
+}
+
+.info-tarefa{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-tarefa input{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.info-tarefa textarea{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.dados-tarefa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcao{
+    background-color: var(--cor04);
+    color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 15px 0px;
+    margin: 20px 10px;
+}
+
+.btn-adicionar-tarefa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.btn-adicionar-tarefa button{
+    background-color: var(--cor04);
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+
+.item-lista{
+    background-color: whitesmoke;
+    border: 3px solid gray;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-lista-tarefa{
+    display: flex;
+    gap: 50px;
+}
+
+.info-lista-tarefa button{
+    width: 70px;px;
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.btn-excluir{
+    background-color: rgb(217, 54, 54);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-editar{
+    background-color: orange;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    height: 40px;
+}
+
+
+
+
+
