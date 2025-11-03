@@ -13,11 +13,11 @@ function getUsers() {
     const direita = document.querySelector(".direita");
     const usuarios = getUsers();
   
-    // Limpa tudo antes de exibir
+    // Limpa tudo antes de aparecer
     direita.innerHTML = "";
   
     if (usuarios.length === 0) {
-      direita.innerHTML = '<img src="fotos/Gemini_Generated_Image_36o1b536o1b536o1-removebg-preview.png" alt="Logo">';
+      direita.innerHTML = '<img src="imagens/Logo.png" alt="logo">';
       return;
     }
   
@@ -37,7 +37,7 @@ function getUsers() {
       `;
       direita.appendChild(div);
   
-      // Botão Editar
+      // editar usuário
       div.querySelector(".editar").addEventListener("click", () => {
         document.getElementById("inome").value = usuario.nome;
         document.getElementById("iemail").value = usuario.email;
